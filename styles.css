@@ -8,10 +8,12 @@ body {
 
 /*  ---- start exercise 1 ----  */
 .nav-items ul {
-  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
-  padding: 0;
   margin: 0;
+  max-width: 700px;
+  padding: 0;
 }
 
 .nav-items a:link,
@@ -29,10 +31,13 @@ body {
 /*  ---- start exercise 2 ----  */
 
 .parent {
-  border: 2px solid #4d7298;
+  align-items: center;
   border-radius: 10px;
-  width: 400px;
+  border: 2px solid #4d7298;
+  display: flex;
   height: 300px;
+  justify-content: center;
+  width: 400px;
 }
 
 .child {
@@ -46,11 +51,17 @@ body {
 
 /*  ---- start exercise 3 ----  */
 .card-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 1px solid #4d7298;
   border-radius: 10px;
   height: 150px;
   width: 150px;
   padding: 20px;
+}
+.child-3 {
+  margin-top: auto;
 }
 
 /*  ---- end exercise 3 ----  */
@@ -61,20 +72,27 @@ body {
 }
 
 .card-4 {
+  display: flex;
+  align-items: center;
   border: 1px solid #4d7298;
   border-radius: 10px;
   width: 500px;
 }
 
 .card-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 20px;
 }
 
 .card-img {
-  border-radius: 10px;
+  margin-right: 10px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .reserve-btn {
+  margin-top: auto;
   background-color: #4d7298;
   color: #fff;
   padding: 10px;
@@ -86,6 +104,9 @@ body {
 /*  ---- start exercise 5 ----  */
 .tags {
   width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .tags li {
@@ -95,4 +116,7 @@ body {
   color: #fff;
   border-radius: 10px;
 }
+/* li::after {
+  content: '' ;
+} */
 /*  ---- end exercise 5 ----  */
